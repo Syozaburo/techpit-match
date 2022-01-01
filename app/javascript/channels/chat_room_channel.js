@@ -1,6 +1,6 @@
 import consumer from "./consumer"
 
-const appChatRoom = consumer.subscriptions.create("ChatRoomChannel", {
+const appChatRoom = consumer.subscriptions.create({channel: "ChatRoomChannel"}, {
   connected() {
     // Called when the subscription is ready for use on the server
   },
